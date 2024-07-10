@@ -619,63 +619,48 @@ a .button p {
 .choose-section {
     width: 90%;
     max-width: 1200px;
-    /* Optional: Set maximum width if needed */
     margin: 40px auto;
-    /* Center align horizontally */
     padding: 50px 0;
-    /* Adjust padding as needed */
 }
 
 .container {
     display: flex;
     flex-wrap: wrap;
-    /* Ensure contents wrap on smaller screens */
     justify-content: center;
-    /* Center align flex items horizontally */
 }
 
 .choose-content {
     display: flex;
     flex-wrap: wrap;
-    /* Allow wrapping on smaller screens */
 }
 
 .left-section {
     flex: 1;
-    /* Take up full width on smaller screens */
     padding: 0 15px;
-    /* Add horizontal padding */
     text-align: center;
-    /* Center align text */
 }
 
 .left-section img {
     max-width: 100%;
-    /* Ensure image stays within container */
 }
 
 .right-section {
     flex: 1;
-    /* Take up full width on smaller screens */
     padding-left: 20px;
-    /* Adjust spacing between sections */
     display: flex;
     flex-direction: column;
     gap: 16px;
     justify-content: center;
     text-align: right;
-    /* Center align text */
 }
 
 .right-section h1 {
     font-size: var(--body--h1-Font-Size);
-    /* Adjust font size for smaller screens */
     color: white;
 }
 
 .right-section span {
     font-size: 16px;
-    /* Adjust font size for smaller screens */
     color: #00D1D1;
 }
 
@@ -687,33 +672,46 @@ a .button p {
 }
 
 @media (max-width: 768px) {
-
     .container {
         display: flex;
-        flex-wrap: wrap;
-        /* Ensure contents wrap on smaller screens */
-        justify-content: center;
-        /* Center align flex items horizontally */
+        flex-direction: column;
+        align-items: center;
     }
 
-
-
     .choose-section {
-        padding: 30px 0;
-        /* Adjust padding for smaller screens */
+        padding: 0px 0;
+    }
+
+    .choose-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
 
     .left-section,
     .right-section {
         flex: 100%;
-        /* Take full width on smaller screens */
-        text-align: center;
-        /* Center align text on smaller screens */
         padding: 0;
-        /* Remove padding on smaller screens */
+    }
+
+    .right-section {
+        order: 1;
+        text-align: left;
+        padding: 0 15px;
+    }
+
+    .left-section {
+        order: 2;
+        width: 100%;
+        height: 100%;
+    }
+
+    .right-section p {
+        margin: 0;
+        width: 100%;
     }
 }
-
 /* Choose section Ends Here */
 
 .certification-section {
@@ -771,6 +769,65 @@ a .button p {
 }
 
 @media (max-width: 768px) {
+
+    .certification-section {
+        width: 90%;
+        max-width: 1300px;
+        margin: 0px auto;
+        padding: 40px 70px;
+        background-color: #002121;
+    }
+    
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .certification-content {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .certification-left-section {
+        flex: 1;
+        padding: 0 15px;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        justify-content: start;
+        align-items: start;
+        margin-left: 20px;
+    }
+    
+    .certification-left-section h1 {
+        font-size: var(--body--h1-Font-Size);
+        color: white;
+    }
+    
+    .certification-left-section span {
+        font-size: 16px;
+        color: #00D1D1;
+    }
+    
+    .certification-left-section p {
+        width: 95%;
+        line-height: 25px;
+        color: white;
+        text-align: left;
+    }
+    
+    .certification-right-section {
+        flex: 1;
+        text-align: center;
+        margin-top: 50px;
+    }
+    
+    .certification-right-section img {
+        max-width: 90%;
+    }
+
     .certification-section {
         padding: 30px 0;
     }
@@ -945,7 +1002,6 @@ a .button p {
     }
 
     .contact-left h1 {
-        font-family: 'integral', sans-serif;
         line-height: 25px;
         text-align: left;
         font-size: 28px;
@@ -978,8 +1034,6 @@ a .button p {
 
     }
 
-
-
     .contact-icons-links {
         display: flex;
         align-items: center;
@@ -993,6 +1047,7 @@ a .button p {
 
 
     .contact-form {
+        margin-top: 30px;
         background-color: #00D1D1;
         padding: 25px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -1022,8 +1077,7 @@ a .button p {
         margin-bottom: 30px;
         padding: 10px;
         border: none;
-        border-radius: 20px;
-        background-color: rgba(255, 255, 255, 0.14);
+        background-color: rgb(255, 255, 255);
         color: white;
         outline: none;
         width: 260px;
@@ -1062,7 +1116,6 @@ a .button p {
 
 }
 
-
 /* Copyright Section Starts From Here */
 
 .copyright {
@@ -1074,6 +1127,8 @@ a .button p {
 
 .copyright p {
     color: white;
-    margin: 0;
+    margin: 0px auto;
     font-size: 14px;
+    width: 90%;
+    text-align: center;
 }
