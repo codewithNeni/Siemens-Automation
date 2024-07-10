@@ -7,12 +7,13 @@
     <title>Siemen Automation</title>
     <link href="https://fonts.googleapis.com/css2?family=Exo:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
 
     <header>
-        <nav class="navbar">
+        <nav class="navbar" data-aos="fade-down" data-aos-duration="2000">
             <div class="navbar-content">
                 <div class="logos">
                     <img src="Assets/logo-1.png" alt="Logo 1" class="logo">
@@ -49,7 +50,7 @@
             </div>
         </nav>
         <section class="hero">
-            <div class="hero-content">
+            <div class="hero-content" data-aos="fade-up" data-aos-duration="3000">
                 <h1>Welcome to Siemens Automation Training Hub</h1>
                 <p>Are you ready to embark on a rewarding journey in the automation industry? At Siemens Automation
                     Training Hub, we offer tailored training programs designed to meet the needs of both seasoned
@@ -85,14 +86,16 @@
     <section class="about-section">
         <div class="container">
             <div class="about-content">
-                <div class="left-section">
+                <div class="left-section" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"
+                    data-aos-duration="1300">
                     <h1>About Us</h1>
                     <span>Your Partner in Automation Excellence</span>
                     <p>At Siemens Automation Training Hub, we are committed to shaping the future of automation by
                         providing top-notch training and education. Our experienced instructors, state-of-the-art
                         facilities, and industry partnerships ensure you receive the highest quality training.</p>
                 </div>
-                <div class="right-section">
+                <div class="right-section" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine"
+                    data-aos-duration="1300">
                     <img src="Assets/about-img.png" alt="About Us Image">
                     <img class="about-overlay" src="Assets/about-overlay-img.png" alt="">
                 </div>
@@ -105,11 +108,12 @@
     <section class="program">
         <div class="program-container">
             <div class="program-head">
-                <h1>Our Programs</h1>
-                <span>Unlock Your Potential with Our Programs</span>
+                <h1 data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1300">Our Programs</h1>
+                <span data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1300">Unlock Your
+                    Potential with Our Programs</span>
             </div>
             <div class="program-box-container">
-                <div class="box box-1">
+                <div class="box box-1" data-aos="fade-right" data-aos-duration="1500">
                     <div class="box-content">
                         <h4>Experienced Professionals (4 Days)</h4>
                         <p>New to the automation field? Our six-day program offers extended training, including
@@ -123,9 +127,9 @@
                         </a>
                     </div>
                 </div>
-                <div class="box box-2"><img class="img" src="Assets/box-img-1.png" alt=""></div>
-                <div class="box box-3"><img class="img" src="Assets/box-img-2.png" alt=""></div>
-                <div class="box box-4">
+                <div class="box box-2" data-aos="fade-left" data-aos-duration="1300"><img class="img" src="Assets/box-img-1.png" alt=""></div>
+                <div class="box box-3" data-aos="fade-right" data-aos-duration="1300"><img class="img" src="Assets/box-img-2.png" alt=""></div>
+                <div class="box box-4" data-aos="fade-left" data-aos-duration="1300">
                     <div class="box-content">
                         <h4>Experienced Professionals (4 Days)</h4>
                         <p>New to the automation field? Our six-day program offers extended training, including
@@ -148,10 +152,10 @@
     <section class="choose-section">
         <div class="container">
             <div class="choose-content">
-                <div class="left-section">
+                <div class="left-section" data-aos="fade-up-right" data-aos-duration="1300">
                     <img src="Assets/choose-img.png" alt="Choose Us Image">
                 </div>
-                <div class="right-section">
+                <div class="right-section" data-aos="fade-up-left" data-aos-duration="1300">
                     <h1>Why Choose Us</h1>
                     <span>Experience the Siemens Difference</span>
                     <p>Siemens Authorized Training Center: We are an official Siemens Authorized Training Center,
@@ -169,14 +173,16 @@
     <section class="certification-section">
         <div class="container">
             <div class="certification-content">
-                <div class="certification-left-section">
+                <div class="certification-left-section" class="right-section" data-aos="fade-right"
+                    data-aos-duration="1300">
                     <h1>Certifications</h1>
                     <span>Stand Out with Siemens Certifications</span>
                     <p>At Siemens Automation Training Hub, we are committed to shaping the future of automation by
                         providing top-notch training and education. Our experienced instructors, state-of-the-art
                         facilities, and industry partnerships ensure you receive the highest quality training.</p>
                 </div>
-                <div class="certification-right-section">
+                <div class="certification-right-section" class="right-section" data-aos="fade-left" data-aos-offset="00"
+                    data-aos-easing="ease-in-sine" data-aos-duration="1300">
                     <img src="Assets/cert-img.png" alt="Certifications Image">
                 </div>
             </div>
@@ -187,7 +193,8 @@
 
 
     <div id="contact" class="contact">
-        <div class="contact-left">
+        <div class="contact-left" class="left-section" data-aos="fade-right" data-aos-offset="300"
+            data-aos-easing="ease-in-sine" data-aos-duration="1300">
 
             <h1>CONTACT US</h1>
             <p>Please fill in the form to enquire about the program</p>
@@ -220,7 +227,7 @@
         </div>
 
 
-        <div id="contact-form" class="contact-form">
+        <div id="contact-form" class="contact-form" data-aos="flip-right" data-aos-duration="1000">
 
             <form action="https://sgcampus.com/asiasoftmalaysia-enquiry.aspx" method="Post">
                 <input type="hidden" id="tq" name="tq" value="eng">
@@ -258,6 +265,10 @@
     <!-- copyright Ends Here -->
 
     <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

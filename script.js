@@ -13,3 +13,4 @@ closeSidebar.addEventListener('click', () => {
     hamburger.classList.remove('active');
     closeSidebar.style.display = 'none';
 });
+
