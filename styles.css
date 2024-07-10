@@ -1,13 +1,24 @@
-body {
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
     font-family: 'Exo', sans-serif;
     overflow-x: hidden;
+    background-color: #001515;
+}
+
+:root {
+    --body--h1-Font-Size: 2.7rem;
 }
 
 header {
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: 85vh;
     background: url(Assets/hero-bg-img.png) no-repeat center center/cover;
 }
 
@@ -101,7 +112,7 @@ header {
 
 .sidebar.active {
     display: flex;
-    
+
 }
 
 .sidebar-links {
@@ -185,12 +196,24 @@ header {
     font-weight: 600;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 899px) {
+
+    header {
+        position: relative;
+        width: 100%;
+        height: 92vh;
+        background: url(Assets/hero-bg-img.png) no-repeat center center/cover;
+    }
+
     .navbar-content {
         justify-content: space-between;
     }
 
-    .navbar-content button{
+    .hero-content {
+        margin-top: 50px;
+    }
+
+    .navbar-content button {
         display: none;
     }
 
@@ -208,7 +231,7 @@ header {
 
     .sidebar.active {
         display: flex;
-        
+
     }
 
     .close-sidebar {
@@ -246,7 +269,7 @@ header {
         justify-content: center;
         align-items: center;
     }
-    
+
     .hero-content {
         text-align: center;
         color: #fff;
@@ -254,17 +277,265 @@ header {
         flex-direction: column;
         align-items: center;
     }
-    
+
     .hero h1 {
         font-size: 1.9rem;
         margin-bottom: 20px;
         margin: 0px auto;
         width: 95%;
     }
-    
+
     .hero p {
         font-size: 1rem;
         margin-bottom: 30px;
         width: 96%;
+    }
+}
+
+/* Header Section Ends Here */
+
+.logo-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    width: 90%;
+    max-width: 1200px;
+    /* Optional: Set a maximum width if needed */
+    margin: 0 auto;
+    /* Center the section horizontally */
+}
+
+.logo-container {
+    width: 20%;
+    /* Adjust as needed for spacing */
+    max-width: 150px;
+    /* Adjust maximum width based on your design */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+
+.logo-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 1200px) {
+    .logo-container {
+        width: 25%;
+        /* Adjust for smaller screens */
+    }
+}
+
+@media (max-width: 992px) {
+    .logo-container {
+        width: 30%;
+        /* Further adjustment for tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    .logo-container {
+        width: 40%;
+        /* Adjust for mobile devices */
+    }
+}
+
+/* Logo Section Ends Here */
+
+.about-section {
+    width: 90%;
+    max-width: 1200px;
+    /* Optional: Set maximum width if needed */
+    margin: 0 auto;
+    /* Center align horizontally */
+    position: relative;
+    padding: 50px 0;
+    /* Adjust padding as needed */
+}
+
+.about-overlay {
+    position: absolute;
+    z-index: 2000;
+    right: -70px;
+    top: -20px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    /* Center align flex items horizontally */
+}
+
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    /* Allow wrapping on smaller screens */
+}
+
+.left-section {
+    flex: 1;
+    /* Take up remaining space */
+    padding-right: 20px;
+    /* Adjust spacing between sections */
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: center;
+}
+
+.left-section span {
+    color: #00D1D1;
+    font-size: 18px;
+}
+
+.left-section h1 {
+    font-size: var(--body--h1-Font-Size);
+    color: white;
+}
+
+.left-section p {
+    color: white;
+    width: 80%;
+}
+
+.right-section {
+    flex: 1;
+    /* Take up remaining space */
+}
+
+.right-section img {
+    max-width: 100%;
+    /* Ensure image stays within container */
+}
+
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        /* Stack sections vertically on smaller screens */
+    }
+
+    .left-section {}
+
+    .left-section,
+    .right-section {
+        padding: 0;
+        /* Remove padding on smaller screens */
+        margin-top: 50px;
+        width: 95%;
+    }
+
+    .about-overlay {
+        display: none;
+    }
+}
+
+/* Program Section Ends Here */
+
+.program{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0px auto;
+    background-color: #002121;
+}
+ 
+.program-head{
+    display: flex;
+    padding: 40px;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 0px auto;
+    align-items: center;
+}
+
+.program-head h1{
+    font-size: var(--body--h1-Font-Size);
+    color: white;
+}
+
+.program-head span{
+    color: #00D1D1;
+}
+
+.program-box-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+    padding: 40px 0px;
+}
+
+.img{
+    width: 100%;
+    height: 100%;
+}
+
+.box {
+    background-color: #007BFF;
+    color: white;
+    width: 95%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.box-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.box-1{
+    background-color: #009898;
+}
+
+.button p{
+    color: #021616;
+}
+
+.box-content p{
+    font-size: 16px;
+    width: 80%;
+    font-weight: 600;
+}
+
+.button img{
+    margin-right: 10px;
+}
+
+.box-content .button{
+    justify-content: space-evenly;
+    background-color: white;
+    width: 210px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+
+
+
+
+@media (min-width: 600px) {
+    .box {
+        width: calc(50% - 10px);
+    }
+}
+
+@media (min-width: 1024px) {
+    .box {
+        width: calc(50% - 20px);
     }
 }
