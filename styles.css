@@ -3,11 +3,12 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    overflow-x: hidden;
+
 }
 
 body {
     font-family: 'Exo', sans-serif;
-    overflow-x: hidden;
     background-color: #001515;
     scroll-behavior: smooth;
 }
@@ -186,6 +187,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 100px;
 }
 
 .hero h1 {
@@ -634,30 +636,32 @@ a .button p {
     max-width: 1200px;
     margin: 40px auto;
     padding: 50px 0;
-}
-
-.container {
+  }
+  
+  .container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-}
-
-.choose-content {
+  }
+  
+  .choose-content {
     display: flex;
     flex-wrap: wrap;
-}
-
-.left-section {
+    overflow: hidden; /* Hide overflow for mobile to avoid scrollbar */
+  }
+  
+  .left-section {
     flex: 1;
     padding: 0 15px;
     text-align: center;
-}
-
-.left-section img {
-    max-width: 100%;
-}
-
-.right-section {
+  }
+  
+  .left-section img {
+    max-width: 100%; /* Ensure image scales on mobile */
+    max-height: 100%; /* Consider setting a max-height if needed */
+  }
+  
+  .right-section {
     flex: 1;
     padding-left: 20px;
     display: flex;
@@ -665,66 +669,66 @@ a .button p {
     gap: 16px;
     justify-content: center;
     text-align: right;
-}
-
-.right-section h1 {
+  }
+  
+  .right-section h1 {
     font-size: var(--body--h1-Font-Size);
     color: white;
-}
-
-.right-section span {
+  }
+  
+  .right-section span {
     font-size: 16px;
     color: #00D1D1;
-}
-
-.right-section p {
-    width: 90%;
+  }
+  
+  .right-section p {
     line-height: 25px;
-    margin-left: 10%;
+    margin: 0; /* Remove margin-left on mobile */
     color: white;
-}
-
-@media (max-width: 768px) {
+    width: 100%; /* Allow paragraphs to wrap on mobile */
+  }
+  
+  @media (max-width: 768px) {
     .container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
-
+  
     .choose-section {
-        padding: 0px 0;
+      padding: 0px 0;
     }
-
+  
     .choose-content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
     }
-
+  
     .left-section,
     .right-section {
-        flex: 100%;
-        padding: 0;
+      flex: 100%;
+      padding: 0 15px; /* Adjust padding if needed */
     }
-
+  
     .right-section {
-        order: 1;
-        text-align: left;
-        padding: 0 15px;
+      order: 1;
+      text-align: left;
     }
-
+  
     .left-section {
-        order: 2;
-        width: 100%;
-        height: 100%;
+      order: 2;
+      width: 100%;
+      height: auto; /* Adjust height as needed for image scaling */
     }
-
+  
     .right-section p {
-        margin: 0;
-        width: 100%;
+      margin: 0;
     }
-}
+  }
+  
+  
 /* Choose section Ends Here */
 
 .certification-section {
@@ -856,32 +860,30 @@ a .button p {
 /* Contact Form Starts From Here */
 
 .contact {
+    overflow: hidden;
     width: 90%;
     max-width: 1200px;
     display: flex;
     margin: 80px auto;
-    display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-
 }
 
 .contact-left {
     width: 50%;
-    height: 80%;
     color: white;
 }
 
 .contact-right {
     width: 50%;
-    height: 80%;
 }
 
 .contact-left h1 {
-    font-size: 45px;
+    font-size: var(--body--h1-Font-Size);
+    overflow: hidden; /* Added this to remove the scrollbar */
 }
 
-.contact-left P {
+.contact-left p {
     width: 60%;
     margin-top: 23px;
     line-height: 23px;
@@ -902,9 +904,7 @@ a .button p {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-
 }
-
 
 .contact-icons-links {
     display: flex;
@@ -915,6 +915,14 @@ a .button p {
 
 .address {
     width: 100%;
+    display: flex;
+    align-items: center; /* Added to align the icon properly */
+}
+
+.address img {
+    width: 154px; /* Adjust the size to match the other icons */
+    height: 44px; /* Adjust the size to match the other icons */
+    margin-right: 10px; /* Add some space between the icon and the text */
 }
 
 .address p {
@@ -926,14 +934,14 @@ a .button p {
     padding: 50px 30px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     color: white;
-    width: 500px;
+    width: 100%;
+    max-width: 500px;
     height: 500px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-
 
 .contact-form form {
     display: flex;
@@ -954,7 +962,8 @@ a .button p {
     background-color: rgb(255, 255, 255);
     color: black;
     outline: none;
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
     height: 50px;
 }
 
@@ -983,7 +992,8 @@ a .button p {
     border-radius: 20px;
     font-size: 16px;
     cursor: pointer;
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
     margin: 0px auto;
 }
 
@@ -993,25 +1003,15 @@ a .button p {
     cursor: pointer;
 }
 
-
-@media (max-width:700px) {
-
+@media (max-width: 700px) {
     .contact {
-        width: 85vw;
-        display: flex;
+        width: 90%;
         margin: 40px auto;
-        display: flex;
         flex-wrap: wrap;
     }
 
-    .contact-left {
+    .contact-left, .contact-right {
         width: 100%;
-        /* height: 80%; */
-    }
-
-    .contact-right {
-        width: 50%;
-        height: 80%;
     }
 
     .contact-left h1 {
@@ -1023,110 +1023,46 @@ a .button p {
         font-weight: 500;
     }
 
-    .contact-left P {
+    .contact-left p, .email-content p {
         width: 100%;
         margin-top: 23px;
         line-height: 23px;
     }
 
-    .email-content {
-        padding: 15px;
-
-    }
-
-    .email-content p {
-        margin-top: 3px;
-    }
-
     .contact-links {
         width: 100%;
-        height: 350px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-
+        height: auto;
     }
 
-    .contact-icons-links {
-        display: flex;
-        align-items: center;
+    .contact-icons-links, .address {
         width: 100%;
-        height: 100px;
+        height: auto;
     }
-
-    .address {
-        width: 100%;
-    }
-
 
     .contact-form {
         margin-top: 30px;
-        background-color: #00D1D1;
         padding: 25px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        color: white;
-        width: 320px;
-        height: 530px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .contact-form form {
-        display: flex;
-        flex-direction: column;
+        width: 90%;
+        max-width: 320px;
+        height: auto;
     }
 
     .contact-form label {
-        margin-left: 15px;
+        margin-left: 0;
         margin-top: 20px;
         font-weight: 800;
         font-size: 16px;
     }
 
-    .contact-form input,
-    .contact-form select {
-        margin-bottom: 30px;
-        padding: 10px;
-        border: none;
-        background-color: rgb(255, 255, 255);
-        color: white;
-        outline: none;
-        width: 260px;
-        height: 50px;
-        margin: 0px auto;
-    }
-
-    .contact-form input::placeholder {
-        color: rgb(0, 0, 0);
-    }
-
-    .contact-form select {
-        appearance: none;
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        background-color: rgb(255, 255, 255);
-        background-image: url('data:image/svg+xml;base64,PHN2ZyBmaWxsPSJibGFjayIgaGVpZ2h0PSIxOCIgdmlld0JveD0iMCAwIDI0IDI0IiB3aWR0aD0iMTgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTEyIDE1bC00LjMtNC40Yy0uMi0uMi0uNS0uMi0uNyAwbC0xLjEgMS4xYy0uMi4yLS4yLjUtLjIuNyAwIC4yLjIuNS4zLjdsNSA1Yy4yLjIuNS4yLjcgMGw1LTVjLjItLjIuMi0uNSAwLS43bC0xLjEtMS4xYy0uMi0uMi0uNS0uMi0uNyAwTDEyIDE1eiIvPjwvc3ZnPg==');
-        background-repeat: no-repeat;
-        background-position: right 10px center;
-        background-size: 16px 16px;
-        color: rgb(0, 0, 0);
+    .contact-form input, .contact-form select, .submit-button {
+        width: 100%;
+        max-width: 260px;
+        margin: 0 auto 20px auto;
     }
 
     .submit-button {
-        background-color: #009898;
-        color: white;
-        padding: 15px 10px;
-        border: none;
-        border-radius: 20px;
-        font-size: 16px;
-        cursor: pointer;
-        width: 260px;
-        margin: 0px auto;
         margin-top: 30px;
     }
-
 }
 
 /* Copyright Section Starts From Here */
