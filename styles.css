@@ -22,6 +22,7 @@ header {
     width: 100%;
     height: 85vh;
     background: url(Assets/hero-bg-img.png) no-repeat center center/cover;
+    overflow: hidden;
 }
 
 
@@ -52,7 +53,7 @@ header {
 }
 
 .logo {
-    height: 60px; /* Adjust height as needed */
+    height: 90px; /* Adjust height as needed */
     margin-right: 10px;
 }
 
@@ -117,6 +118,7 @@ header {
 
 .sidebar.active {
     right: 0; /* Slide sidebar into view */
+    ovw
 }
 
 .sidebar-links {
@@ -171,6 +173,17 @@ header {
         display: flex;
     }
 }
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+    .contact-button {
+        display: none;
+    }
+    .hamburger {
+        display: flex;
+    }
+}
 .hero {
     position: relative;
     width: 100%;
@@ -187,7 +200,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 100px;
+    margin-bottom: 180px;
 }
 
 .hero h1 {
@@ -917,11 +930,12 @@ a .button p {
     width: 100%;
     display: flex;
     align-items: center; /* Added to align the icon properly */
+    overflow: hidden;
 }
 
 .address img {
-    width: 154px; /* Adjust the size to match the other icons */
-    height: 44px; /* Adjust the size to match the other icons */
+    width: 96px; 
+    height: 50px; /* Adjust the size to match the other icons
     margin-right: 10px; /* Add some space between the icon and the text */
 }
 
@@ -931,7 +945,7 @@ a .button p {
 
 .contact-form {
     background-color: #00D1D1;
-    padding: 50px 30px;
+    padding: 0px 0px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     color: white;
     width: 100%;
