@@ -13,34 +13,42 @@
 <body>
 
     <header>
-        <nav class="navbar">
-            <div class="navbar-content">
-                <div class="logos">
-                    <img src="Assets/logo-1.png" alt="Logo 1" class="logo">
-                    <img src="Assets/logo-2.png" alt="Logo 2" class="logo">
-                </div>
+    
+
+
+        <nav class="navbar" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+            <div class="logo">
+                <a href=""><img src="Assets/logo-1.png" alt="Logo" class="logo-img"></a>
+                <a href=""><img src="Assets/logo-2.png" alt="Logo" class="logo-img"></a>
+            </div>
+            <div class="navbar-right">
                 <ul class="nav-links">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Programs</a></li>
-                    <li><a href="#">Why Choose Us</a></li>
-                    <li><a href="#">Certifications</a></li>
+                    <li><a href="#choose">Home</a></li>
+                    <li><a href="#program">About Us</a></li>
+                    <li><a href="#trainers">Programs</a></li>
+                    <li><a href="#category">Why Choose Us</a></li>
+                    <li><a href="#category">Certifications</a></li>
                 </ul>
-                <button class="contact-button">Contact Us</button>
-                <div class="menu-icon" onclick="toggleMenu()" ontouchstart="toggleMenu()">&#9776;</div>
+                <div class="buttons">
+                    <a href="#contact">
+                        <button class="contact-us">Contact Us</button>
+                    </a>
+                </div>
+                <div class="menu-icon" onClick="toggleMenu()">&#9776;</div>
             </div>
         </nav>
-
+    
         <div id="sidebar" class="sidebar">
-        <a href="javascript:void(0)" class="closebtn" onClick="toggleMenu()">&times;</a>
-        <li><a href="#choose">Why Choose Our Programs</a></li>
-        <li><a href="#program">Programs</a></li>
-        <li><a href="#trainers">Trainers</a></li>
-        <li><a href="#category">Categories</a></li>
-        <a href="#contact">
-            <button class="contact-us">Contact Us</button>
-        </a>
-    </div>
+            <a href="javascript:void(0)" class="closebtn" onClick="toggleMenu()">&times;</a>
+            <li><a href="#choose">Home</a></li>
+                    <li><a href="#program">About Us</a></li>
+                    <li><a href="#trainers">Programs</a></li>
+                    <li><a href="#category">Why Choose Us</a></li>
+                    <li><a href="#category">Certifications</a></li>
+            <a href="#contact">
+                <button class="contact-us">Contact Us</button>
+            </a>
+        </div>
 
 
         <script>
@@ -53,12 +61,6 @@
                 }
             }
         </script>
-
-
-
-
-
-
 
 
 
@@ -77,26 +79,6 @@
 
 
     <!-- Header Section Ends Here -->
-
-    <section class="logo-section">
-        <div class="logo-container">
-            <img src="Assets/img-1.png" alt="Logo 1">
-        </div>
-        <div class="logo-container">
-            <img src="Assets/img-2.png" alt="Logo 2">
-        </div>
-        <div class="logo-container">
-            <img src="Assets/img-3.png" alt="Logo 3">
-        </div>
-        <div class="logo-container">
-            <img src="Assets/img-4.png" alt="Logo 4">
-        </div>
-        <div class="logo-container">
-            <img src="Assets/img-5.png" alt="Logo 5">
-        </div>
-    </section>
-
-    <!-- Logo Section Ends Here -->
 
     <section class="about-section">
         <div class="container">
