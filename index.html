@@ -67,7 +67,7 @@
 
         <section class="hero">
             <div class="hero-content" data-aos="fade-up" data-aos-duration="3000">
-                <h1>Welcome to Siemens Automation Training Hub</h1>
+                <h1><br><span></span></h1>
                 <p>Are you ready to embark on a rewarding journey in the automation industry? At Siemens Automation
                     Training Hub, we offer tailored training programs designed to meet the needs of both seasoned
                     professionals and beginners. Explore our comprehensive Siemens S7 1200/1500 Level 2/3 TIA Portal
@@ -263,6 +263,18 @@
     <script>
         AOS.init();
     </script>
+
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var typed = new Typed('span', {
+            strings: ['Welcome to Siemens Automation Training Hub', 'Welcome to Siemens Automation Training Hub'],
+            typeSpeed: 40, // Typing speed in milliseconds
+            loop: true, // Loop typing animation
+            smartBackspace: true, // Remove only what is typed, setting of additional space to
+        });
+    });
+</script>
 </body>
 
 </html>
