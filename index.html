@@ -12,10 +12,8 @@
 
 <body>
 
-    <header >
-        <nav class="navbar" data-aos="fade-down"
-        data-aos-easing="linear"
-        data-aos-duration="1500">
+    <header>
+        <nav class="navbar">
             <div class="navbar-content">
                 <div class="logos">
                     <img src="Assets/logo-1.png" alt="Logo 1" class="logo">
@@ -29,27 +27,42 @@
                     <li><a href="#">Certifications</a></li>
                 </ul>
                 <button class="contact-button">Contact Us</button>
-                <div class="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </div>
-            <div class="sidebar">
-                <div class="close-sidebar">
-                    <span></span>
-                    <span></span>
-                </div>
-                <ul class="sidebar-links">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Programs</a></li>
-                    <li><a href="#">Why Choose Us</a></li>
-                    <li><a href="#">Certifications</a></li>
-                    <button class="contact-button">Contact Us</button>
-                </ul>
+                <div class="menu-icon" onclick="toggleMenu()" ontouchstart="toggleMenu()">&#9776;</div>
             </div>
         </nav>
+
+        <div id="sidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onClick="toggleMenu()">&times;</a>
+        <li><a href="#choose">Why Choose Our Programs</a></li>
+        <li><a href="#program">Programs</a></li>
+        <li><a href="#trainers">Trainers</a></li>
+        <li><a href="#category">Categories</a></li>
+        <a href="#contact">
+            <button class="contact-us">Contact Us</button>
+        </a>
+    </div>
+
+
+        <script>
+            function toggleMenu() {
+                const sidebar = document.getElementById("sidebar");
+                if (sidebar.style.width === "0px" || sidebar.style.width === "") {
+                    sidebar.style.width = "250px";
+                } else {
+                    sidebar.style.width = "0px";
+                }
+            }
+        </script>
+
+
+
+
+
+
+
+
+
+
         <section class="hero">
             <div class="hero-content" data-aos="fade-up" data-aos-duration="3000">
                 <h1>Welcome to Siemens Automation Training Hub</h1>
@@ -127,8 +140,10 @@
                         </a>
                     </div>
                 </div>
-                <div class="box box-2" data-aos="fade-left" data-aos-duration="1300"><img class="img" src="Assets/box-img-1.png" alt=""></div>
-                <div class="box box-3" data-aos="fade-right" data-aos-duration="1300"><img class="img" src="Assets/box-img-2.png" alt=""></div>
+                <div class="box box-2" data-aos="fade-left" data-aos-duration="1300"><img class="img"
+                        src="Assets/box-img-1.png" alt=""></div>
+                <div class="box box-3" data-aos="fade-right" data-aos-duration="1300"><img class="img"
+                        src="Assets/box-img-2.png" alt=""></div>
                 <div class="box box-4" data-aos="fade-left" data-aos-duration="1300">
                     <div class="box-content">
                         <h4>Experienced Professionals (4 Days)</h4>

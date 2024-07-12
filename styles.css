@@ -26,6 +26,7 @@ header {
 }
 
 
+/* Navbar styles */
 .navbar {
     position: relative;
     top: 0;
@@ -86,104 +87,91 @@ header {
     font-size: 1rem;
 }
 
-.hamburger {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-}
+/* Sidebar styles */
 
-.hamburger span {
-    height: 2px;
-    width: 25px;
-    background: #fff;
-    margin: 4px 0;
-    border-radius: 5px;
-    transition: all 0.3s ease;
+.menu-icon {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
 }
 
 .sidebar {
+    height: 100%;
+    width: 0;
     position: fixed;
     top: 0;
-    right: -250px; /* Hide sidebar off-screen initially */
-    height: 100%;
-    width: 250px;
-    background: rgba(0, 0, 0, 0.7);
-    backdrop-filter: blur(10px);
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    z-index: 999;
-    transition: right 0.3s ease; /* Use right property for animation */
-}
-
-.sidebar.active {
-    right: 0; /* Slide sidebar into view */
-    ovw
-}
-
-.sidebar-links {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+    right: 0;
+    background-color: #00134d;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    color: white;
     text-align: center;
+    z-index: 122000;
 }
 
-.sidebar-links li {
-    margin: 20px 0;
-}
-
-.sidebar-links a {
-    color: #fff;
+.sidebar a {
+    padding: 10px 15px;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 16px;
+    color: white;
+    display: block;
+    transition: 0.3s;
 }
 
-.close-sidebar {
+.sidebar a:hover {
+    background-color: #16307c86;
+}
+
+.sidebar .closebtn {
     position: absolute;
     top: 20px;
-    right: 20px;
+    right: 25px;
+    font-size: 36px;
     cursor: pointer;
 }
 
-.close-sidebar span {
-    display: block;
-    width: 30px;
-    height: 2px;
-    background-color: #fff;
-    transform-origin: center;
-    transition: transform 0.3s ease;
-}
 
-.close-sidebar span:first-child {
-    transform: rotate(45deg);
-}
 
-.close-sidebar span:last-child {
-    transform: rotate(-45deg);
-}
-
+/* Media query for responsive adjustments */
 @media screen and (max-width: 768px) {
+
+    .sidebar {
+        height: 100%;
+        width: 300px;
+        position: fixed;
+        top: 0;
+        right: 0;
+        background-color: #00134d;
+        overflow-x: visible;
+        transition: 0.5s;
+        padding-top: 60px;
+        color: white;
+        text-align: center;
+        z-index: 1000;
+    }
+    
+    .sidebar li {
+        list-style-type: none;
+        font-size: 10px;
+    }
+
+
     .nav-links {
         display: none;
     }
+
     .contact-button {
         display: none;
     }
-    .hamburger {
-        display: flex;
+
+    .menu-icon {
+        display: block;
     }
 }
-@media screen and (max-width: 768px) {
-    .nav-links {
-        display: none;
-    }
-    .contact-button {
-        display: none;
-    }
-    .hamburger {
-        display: flex;
-    }
-}
+
+
+
 .hero {
     position: relative;
     width: 100%;
@@ -889,6 +877,7 @@ a .button p {
 
 .contact-right {
     width: 50%;
+    height: 80%;
 }
 
 .contact-left h1 {
@@ -945,11 +934,10 @@ a .button p {
 
 .contact-form {
     background-color: #00D1D1;
-    padding: 0px 0px;
+    padding: 30px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     color: white;
-    width: 100%;
-    max-width: 500px;
+    width: 500px;
     height: 500px;
     display: flex;
     flex-direction: column;
@@ -976,8 +964,7 @@ a .button p {
     background-color: rgb(255, 255, 255);
     color: black;
     outline: none;
-    width: 100%;
-    max-width: 400px;
+    width: 400px;
     height: 50px;
 }
 
@@ -999,11 +986,10 @@ a .button p {
 }
 
 .submit-button {
-    background-color: #00D1D1;
+    background-color: #009898;
     color: white;
     padding: 15px 10px;
     border: none;
-    border-radius: 20px;
     font-size: 16px;
     cursor: pointer;
     width: 100%;
@@ -1013,7 +999,6 @@ a .button p {
 
 .contact-form select option {
     background-color: #00D1D1;
-    border-radius: 0px;
     cursor: pointer;
 }
 
@@ -1027,6 +1012,13 @@ a .button p {
     .contact-left, .contact-right {
         width: 100%;
     }
+
+    .address img {
+        width: 136px; 
+        height: 50px; /* Adjust the size to match the other icons
+        margin-right: 10px; /* Add some space between the icon and the text */
+    }
+    
 
     .contact-left h1 {
         line-height: 25px;
