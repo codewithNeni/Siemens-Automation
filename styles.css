@@ -10,7 +10,7 @@
 body {
     font-family: 'Exo', sans-serif;
     background-color: #001515;
-    scroll-behavior: smooth;
+    scroll-behavior: smooth scroll;
 }
 
 :root {
@@ -494,12 +494,12 @@ a .button p {
     .program-box-container {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: space-evenly;
         width: 90%;
         max-width: 1200px;
         margin: 0 auto;
         gap: 0px;
-        padding: 40px 0px;
+        padding: 30px 0px;
     }
 
     .program {
@@ -522,7 +522,6 @@ a .button p {
         height: 63%;
         background-color: none;
     }
-
 
     .box {
         color: white;
@@ -977,6 +976,12 @@ a .button p {
         width: 100%;
     }
 
+    .address img {
+        width: 146px; 
+        height: 50px; /* Adjust the size to match the other icons
+        margin-right: 10px; /* Add some space between the icon and the text */
+    }
+    
     .contact-left h1 {
         text-align: left;
         font-size: 34px;
