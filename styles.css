@@ -402,6 +402,7 @@ header {
     max-width: 1200px;
     margin: 0px auto;
     background-color: #002121;
+    margin-bottom: 80px;
 }
 
 .program-head {
@@ -447,6 +448,7 @@ header {
     justify-content: center;
     align-items: center;
     font-size: 1.5rem;
+    overflow: hidden;
 }
 
 .box-content {
@@ -599,6 +601,140 @@ a .button p {
 
 /* Program section Ends Here */
 
+.include-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 80px;
+    position: relative;
+    max-width: 1500px;
+    margin: 0px auto;
+    
+}
+
+.include-box {
+    background-color: #002121;
+    color: #fff;
+    width: 370px;
+    overflow: hidden;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.include-box-image-1 img{
+    position: absolute;
+    left: 280px;
+    top: 10px;
+    z-index: 10000;
+}
+.include-box-image-2 img{
+    position: absolute;
+    left: 690px;
+    top: 10px;
+    z-index: 110000;
+}
+.include-box-image-3 img{
+    position: absolute;
+    right: 260px;
+    top: 10px;
+    z-index: 10000;
+}
+
+.include-box-image-1 img {
+    max-width: 300px;
+}
+
+.include-box-content {
+    padding: 80px 20px 20px;
+}
+
+.include-box-heading {
+    margin-bottom: 10px;
+}
+
+.include-box-paragraph {
+    margin-bottom: 20px;
+    line-height: 30px;
+}
+
+/* Responsive styles */
+
+@media (max-width: 800px) {
+
+    .include-section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 40px;
+        padding: 80px 0px;
+        position: relative;
+        max-width: 1500px;
+        margin: 0px auto;
+        
+    }
+
+    .include-heading h1{
+        font-size: 16px;
+    }
+    
+    .include-box {
+        background-color: #002121;
+        color: #fff;
+        width: 570px;
+        overflow: hidden;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    
+    .include-box-image-1 img{
+        position: absolute;
+        left: 110px;
+        top: 50px;
+        z-index: 110000;
+    }
+    .include-box-image-2 img{
+        position: absolute;
+        left: 110px;
+        top: 560px;
+        z-index: 1200300;
+    }
+    .include-box-image-3 img{
+        position: absolute;
+        left: 110px;
+        top: 905px;
+        z-index: 10000;
+    }
+        
+    .include-box-content {
+        padding: 80px 20px 20px;
+    }
+    
+    .include-box-heading {
+        margin-bottom: 10px;
+    }
+    
+    .include-box-paragraph {
+        margin-bottom: 20px;
+        line-height: 30px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Include section Ends Here */
 
 
 .trainers-section {
@@ -610,26 +746,37 @@ a .button p {
     position: relative;
 }
 
-.section-heading {
-    margin-top: 80px;
-    padding: 0px 140px;
+.section-head-left {
+    width: 50%;
 }
 
-.section-heading h1 {
+.section-head-right {
+    width: 40%;
+    text-align: right;
+    color: white;
+}
+
+.section-head-left h1 {
     font-size: var(--body--h1-Font-Size);
     color: white;
     width: 100%;
-    padding: 0px 80px;
     max-width: 1200px;
     margin-top: 100px;
     margin: 0px auto;
 }
 
-.section-heading h3 {
-    font-size: 25px;
-    color: white;
+.section-heading {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 130px;
+    max-width: 1300px;
+    margin: 20px auto;
+}
+
+.section-head-left h3 {
+    font-size: 16px;
+    color: #00D1D1;
     width: 100%;
-    padding: 0px 80px;
     max-width: 1200px;
     margin-top: 120px;
     margin: 0px auto;
@@ -722,7 +869,7 @@ a .button p {
 }
 
 /* Responsive styles */
-@media (max-width: 768px) {
+@media (max-width: 910px) {
     .trainer-box {
         width: 100%;
     }
@@ -730,9 +877,21 @@ a .button p {
     .section-heading {
         margin-top: 80px;
         padding: 0px 0px;
+        display: flex;
+        flex-direction: column;
     }
-    
-    .section-heading h1 {
+
+    .section-head-left {
+        width: 90%;
+    }
+
+    .section-head-right {
+        width: 100%;
+        text-align: left;
+        padding: 20px 30px;
+    }
+
+    .section-head-left h1 {
         font-size: var(--body--h1-Font-Size);
         color: white;
         width: 100%;
@@ -741,10 +900,9 @@ a .button p {
         margin-top: 100px;
         margin: 0px auto;
     }
-    
-    .section-heading h3 {
-        font-size: 25px;
-        color: white;
+
+    .section-head-left h3 {
+        font-size: 20px;
         width: 100%;
         padding: 0px 30px;
         max-width: 1200px;
@@ -752,25 +910,25 @@ a .button p {
         margin: 0px auto;
         font-weight: 400;
     }
-    
+
 
     .trainer-image {
         z-index: 102000;
         position: absolute;
         max-width: 310px;
-        top: 1000px;
+        top: 888px;
     }
 
     .trainer-img-1 {
         z-index: 10000;
         position: absolute;
         max-width: 290px;
-        top: 70px;
+        top: 30px;
     }
 
 
     .trainer-box {
-        margin-top: 169px;
+        margin-top: 129px;
         background-color: #002121;
         color: #fff;
         display: flex;
@@ -790,6 +948,7 @@ a .button p {
         text-transform: uppercase;
         padding: 10px;
         width: 100%;
+        font-size: 18px;
         margin-top: 115px;
         margin-bottom: 20px;
     }
@@ -1142,7 +1301,6 @@ a .button p {
     width: 100%;
     display: flex;
     align-items: center;
-    /* Added to align the icon properly */
     overflow: hidden;
 }
 
