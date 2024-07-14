@@ -15,7 +15,6 @@
     <header>
 
 
-
         <nav class="navbar" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
             <div class="logo">
                 <a href=""><img src="Assets/logo-1.png" alt="Logo" class="logo-img"></a>
@@ -25,9 +24,16 @@
                 <ul class="nav-links">
                     <li><a href="#choose">Home</a></li>
                     <li><a href="#about-section">About Us</a></li>
-                    <li><a href="#program">Programs</a></li>
+                    <li class="dropdown">
+                        <a href="">Programs &#9662;</a>
+                        <ul class="dropdown">
+                            <li><a href="#program">Experienced Professionals (4 Days)</a></li>
+                            <li><a href="#program">Beginners & Transition Workers (6 Days)</a></li>
+                        </ul>
+                    </li>
                     <li><a href="#choose-section">Why Choose Us</a></li>
                     <li><a href="#certification-section">Certifications</a></li>
+                    <li><a href="#trainers">Trainers</a></li>
                 </ul>
                 <div class="buttons">
                     <a href="#contact">
@@ -37,20 +43,29 @@
                 <div class="menu-icon" onClick="toggleMenu()">&#9776;</div>
             </div>
         </nav>
-
+        
         <div id="sidebar" class="sidebar">
             <a href="javascript:void(0)" class="closebtn" onClick="toggleMenu()">&times;</a>
-            <li><a href="#choose">Home</a></li>
-            <li><a href="#about-section">About Us</a></li>
-            <li><a href="#program">Programs</a></li>
-            <li><a href="#choose-section">Why Choose Us</a></li>
-            <li><a href="#certification-section">Certifications</a></li>
+            <ul class="sidebar-links">
+                <li><a href="#choose">Home</a></li>
+                <li><a href="#about-section">About Us</a></li>
+                <li class="dropdown">
+                    <h1>Programs &#9662;</h1>
+                    <ul class="dropdown">
+                        <li><a href="#program">Experienced Professionals (4 Days)</a></li>
+                        <li><a href="#program">Beginners & Transition Workers (6 Days)</a></li>
+                    </ul>
+                </li>
+                <li><a href="#choose-section">Why Choose Us</a></li>
+                <li><a href="#certification-section">Certifications</a></li>
+                <li><a href="#trainers">Trainers</a></li>
+            </ul>
             <a href="#contact">
                 <button class="contact-us">Contact Us</button>
             </a>
         </div>
-
-
+        
+        
         <script>
             function toggleMenu() {
                 const sidebar = document.getElementById("sidebar");
@@ -61,7 +76,7 @@
                 }
             }
         </script>
-
+        
 
 
 
@@ -114,7 +129,7 @@
                         <p>New to the automation field? Our six-day program offers extended training, including
                             foundational automation competencies. Ideal for graduates, school leavers, and transition
                             workers.</p>
-                        <a href="">
+                        <a href="#contact">
                             <div class="button">
                                 <p>APPLY NOW</p>
                                 <img src="Assets/btn-arrow.png" alt="">
@@ -131,7 +146,7 @@
                         <h4>Beginners & Transition Workers (6 Days)</h4>
                         <p>Dive deep into Siemens S7 controllers and TIA Portal programming to enhance your expertise in
                             just four days. Perfect for industry professionals looking to advance their careers.</p>
-                        <a href="">
+                        <a href="#contact">
                             <div class="button">
                                 <p>APPLY NOW</p>
                                 <img src="Assets/box-arrow-2.png" alt="">
@@ -149,47 +164,51 @@
         <div class="section-head-left include-heading">
             <h1>All Programs Include</h1>
         </div>
-        
+
     </div>
 
     <section class="include-section">
         <div class="include-box-image-1">
-          <img src="Assets/skm.png" alt="Image 1" data-aos="fade-right" data-aos-duration="1300">
+            <img src="Assets/skm.png" alt="Image 1" data-aos="fade-right" data-aos-duration="1300">
         </div>
         <div class="include-box" data-aos="fade-right" data-aos-duration="1300">
-          
-          <div class="include-box-content">
-              <h2 class="include-box-heading">Free Sijil Kemahiran Malaysia (SKM)</h2>
-              <p class="include-box-paragraph">Micro Credential PLC SKM Level 2</p>
-            <p class="include-box-paragraph">Free Learning Management Support for one year Value-Added Program: Enhance your credentials with globally recognized certifications, providing you with a competitive edge in the automation industry.</p>
-          </div>
+
+            <div class="include-box-content">
+                <h2 class="include-box-heading">Free Sijil Kemahiran Malaysia (SKM)</h2>
+                <p class="include-box-paragraph">Micro Credential PLC SKM Level 2</p>
+                <p class="include-box-paragraph">Free Learning Management Support for one year Value-Added Program:
+                    Enhance your credentials with globally recognized certifications, providing you with a competitive
+                    edge in the automation industry.</p>
+            </div>
         </div>
 
         <div class="include-box-image-2">
-          <img src="Assets/hrd.png" alt="Image 2" data-aos="fade-up" data-aos-duration="3000">
+            <img src="Assets/hrd.png" alt="Image 2" data-aos="fade-up" data-aos-duration="3000">
         </div>
         <div class="include-box" data-aos="fade-up" data-aos-duration="3000">
-          <div class="include-box-content">
-            <h2 class="include-box-heading">HRD Corp Levy Claimable:</h2>
-            <p class="include-box-paragraph">Our programs are eligible for HRD Corp levy claims, making it easier for employers to invest in their employees’ training.</p>
-          </div>
+            <div class="include-box-content">
+                <h2 class="include-box-heading">HRD Corp Levy Claimable:</h2>
+                <p class="include-box-paragraph">Our programs are eligible for HRD Corp levy claims, making it easier
+                    for employers to invest in their employees’ training.</p>
+            </div>
         </div>
 
         <div class="include-box-image-3">
-          <img src="Assets/loan.png" alt="Image 3" data-aos="fade-left" data-aos-duration="1300">
+            <img src="Assets/loan.png" alt="Image 3" data-aos="fade-left" data-aos-duration="1300">
         </div>
         <div class="include-box" data-aos="fade-left" data-aos-duration="1300">
-          <div class="include-box-content">
-            <h2 class="include-box-heading">Skills Foundation Loan:</h2>
-            <p class="include-box-paragraph">Grab this opportunity to finance your training through the Skills Foundation Loan, making quality education accessible for everyone.</p>
-          </div>
+            <div class="include-box-content">
+                <h2 class="include-box-heading">Skills Foundation Loan:</h2>
+                <p class="include-box-paragraph">Grab this opportunity to finance your training through the Skills
+                    Foundation Loan, making quality education accessible for everyone.</p>
+            </div>
         </div>
-      </section>
+    </section>
 
     <!-- Include Section Ends Here -->
 
 
-    <div class="section-heading" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1300"> 
+    <div class="section-heading" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1300">
         <div class="section-head-left">
             <h1>Trainers</h1>
             <h3>Meet Our Expert Trainers</h3>
@@ -200,8 +219,8 @@
         </div>
     </div>
 
-    <section class="trainers-section" data-aos="fade-right" data-aos-duration="1300">
-        <div class="trainer-box" >
+    <section id="trainers" class="trainers-section" data-aos="fade-right" data-aos-duration="1300">
+        <div class="trainer-box">
             <img src="Assets/train-1.png" alt="Trainer 1" class="trainer-img-1">
             <h2 class="trainer-heading">Ts. Amiruddin Zahamail</h2>
             <p class="trainer-description">Experience: Over 12 years in training and managing various training
@@ -232,7 +251,7 @@
                 projects, earning accolades in national and international exhibitions.</p>
             <div class="trainer-images-2">
                 <a href="tel: +60194806300"><img src="Assets/call-icon.png" alt="Icon 1" class="trainer-icon-2"></a>
-                <a href="mailto: ahmadnasir@unimap.edu.my"></a><img src="Assets/mail-icon.png" alt="Icon 2"
+                <a href="mailto: ahmadnasir@unimap.edu.my"><img src="Assets/mail-icon.png" alt="Icon 2"
                     class="trainer-icon-2"></a>
             </div>
         </div>
@@ -250,11 +269,9 @@
                 <div class="right-section" data-aos="fade-up-left" data-aos-duration="1300">
                     <h1>Why Choose Us</h1>
                     <span>Experience the Siemens Difference</span>
-                    <p>Siemens Authorized Training Center: We are an official Siemens Authorized Training Center,
-                        ensuring you receive the highest quality training and materials.</p>
-                    <p>Value-Added Certificates: All Siemens certificates come with SKM (Malaysian Skills Certificate)
-                        Level 2 on PLC modular for FREE. Enhance your credentials with globally recognized
-                        certifications.</p>
+                    <p>Siemens Authorized Training Center: We are an official Siemens Authorized Training Center, ensuring you receive the highest quality training and materials.</p>
+                    <p>Value-Added Certificates: All Siemens certificates come with SKM (Malaysian Skills Certificate) Level 2 on PLC modular for FREE. Enhance your credentials with globally recognized certifications.</p>
+                    <p>Comprehensive Support: Enjoy free Learning Management Support for one year with all our programs.</p>
                 </div>
             </div>
         </div>

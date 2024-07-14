@@ -26,13 +26,35 @@ body {
     background-color: transparent;
     color: white;
     overflow: hidden;
-    padding: 45px 20px;
-    width: 85vw;
-    height: 60px;
+    padding: 0px 20px;
+    width: 95vw;
+    height: 190px;
     max-width: 1300px;
     position: relative;
     z-index: 1;
-    margin: 30px auto;
+    margin: 0px auto;
+}
+
+ul li ul.dropdown li{
+    display: block;
+    padding: 3px 0px;
+    border: 1px solid rgb(97, 97, 97);
+
+}
+
+ul li ul.dropdown{
+    width: auto;
+    position: absolute;
+    z-index: 9999;
+    display: none;
+}
+
+ul li:hover ul.dropdown{
+    display: block;
+    background-color: #009898;
+    transition:  0.3s ease, transform 0.3s ease;
+    transform: scale(1.05);
+    margin-top: 12px;
 }
 
 
@@ -46,12 +68,11 @@ body {
 }
 
 .logo-img {
-    height: 90px;
-    width: auto;
+    height: 100px;
 }
 
 .navbar-right {
-    width: 70%;
+    width: 80%;
     display: flex;
     align-items: center;
     gap: 60px;
@@ -70,7 +91,6 @@ body {
 .nav-links li {
     display: inline;
     overflow: hidden;
-
 }
 
 .nav-links a {
@@ -226,6 +246,8 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
+
 }
 
 .hero-content {
@@ -235,7 +257,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 180px;
+    margin-bottom: 400px;
 }
 
 .hero h1 {
@@ -288,6 +310,7 @@ header {
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-bottom: 250px;
     }
 
     .hero h1 {
