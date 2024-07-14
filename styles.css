@@ -202,6 +202,7 @@ ul li:hover ul.dropdown{
         background-color: #009898;
         width: 100%;
     }
+
     .dropdown:hover ul li{
         padding: 5px;
         width: 100%;
@@ -769,7 +770,7 @@ a .button p {
     .include-box-image-3 img{
         position: absolute;
         left: 110px;
-        top: 905px;
+        top: 960px;
         z-index: 10000;
     }
         
@@ -786,20 +787,6 @@ a .button p {
         line-height: 30px;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* Include section Ends Here */
 
