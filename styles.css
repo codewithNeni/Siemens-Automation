@@ -768,7 +768,7 @@ a .button p {
     
     .include-box-image-1 img{
         position: absolute;
-        left: 110px;
+        left: 90px;
         top: 70px;
         z-index: 110000;
     }
@@ -781,14 +781,14 @@ a .button p {
     .include-box-image-2 img{
         position: absolute;
         left: 110px;
-        top: 890px;
+        top: 915px;
         z-index: 1200300;
     }
     .include-box-image-3 img{
         position: absolute;
         left: 110px;
-        top: 1270px;
-        z-index: 10000;
+        top: 1300px;
+        z-index: 10000000;
     }
         
     .include-box-content {
