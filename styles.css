@@ -670,20 +670,22 @@ a .button p {
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
-    padding: 80px;
+    padding: 40px;
     position: relative;
     max-width: 1500px;
-    margin: 0px auto;
+    margin: 60px auto;
     
 }
 
 .include-box {
     background-color: #002121;
     color: #fff;
-    width: 370px;
+    width: 310px;
     overflow: hidden;
     text-align: center;
     margin-bottom: 10px;
+    margin-top: 20px;
+    padding-top: 20px;
 }
 
 .include-box-content-2{
@@ -692,24 +694,33 @@ a .button p {
 
 .include-box-image-1 img{
     position: absolute;
-    left: 280px;
+    left: 150px;
+    top: 0px;
+    z-index: 10000;
+}
+.include-box-image-4 img{
+    position: absolute;
+    left: 510px;
     top: 10px;
     z-index: 10000;
 }
 .include-box-image-2 img{
     position: absolute;
-    left: 690px;
+    right: 492px;
     top: 10px;
     z-index: 110000;
 }
 .include-box-image-3 img{
     position: absolute;
-    right: 260px;
+    right: 140px;
     top: 10px;
     z-index: 10000;
 }
 
 .include-box-image-1 img {
+    max-width: 300px;
+}
+.include-box-image-4 img {
     max-width: 300px;
 }
 
@@ -758,19 +769,25 @@ a .button p {
     .include-box-image-1 img{
         position: absolute;
         left: 110px;
-        top: 50px;
+        top: 70px;
+        z-index: 110000;
+    }
+    .include-box-image-4 img{
+        position: absolute;
+        left: 110px;
+        top: 450px;
         z-index: 110000;
     }
     .include-box-image-2 img{
         position: absolute;
         left: 110px;
-        top: 560px;
+        top: 890px;
         z-index: 1200300;
     }
     .include-box-image-3 img{
         position: absolute;
         left: 110px;
-        top: 960px;
+        top: 1320px;
         z-index: 10000;
     }
         
