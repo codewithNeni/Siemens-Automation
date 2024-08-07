@@ -673,7 +673,7 @@ a .button p {
     padding: 40px;
     position: relative;
     max-width: 1500px;
-    margin: 60px auto;
+    margin: 70px auto;
     
 }
 
@@ -684,7 +684,7 @@ a .button p {
     overflow: hidden;
     text-align: center;
     margin-bottom: 10px;
-    margin-top: 20px;
+    margin-top: 40px;
     padding-top: 20px;
 }
 
@@ -707,7 +707,7 @@ a .button p {
 .include-box-image-2 img{
     position: absolute;
     right: 492px;
-    top: 10px;
+    top: 6px;
     z-index: 110000;
 }
 .include-box-image-3 img{
@@ -770,25 +770,25 @@ a .button p {
     .include-box-image-1 img{
         position: absolute;
         left: 90px;
-        top: 70px;
+        top: 90px;
         z-index: 110000;
     }
     .include-box-image-4 img{
         position: absolute;
         left: 83px;
-        top: 450px;
+        top: 490px;
         z-index: 110000;
     }
     .include-box-image-2 img{
         position: absolute;
         left: 110px;
-        top: 1000px;
+        top: 1051px;
         z-index: 1200300;
     }
     .include-box-image-3 img{
         position: absolute;
         left: 110px;
-        top: 1380px;
+        top: 1460px;
         z-index: 10000000;
     }
         
